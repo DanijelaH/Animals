@@ -2,8 +2,9 @@ package animals;
 
 public class Bird extends Animal {
     
-    public String reproduction = "egg";
-    public String outerCovering = "feather";
+    private String reproduction = "egg";
+    private String outerCovering = "feather";
+    private Insect favouriteInsect;
 
     @Override
     public void move() {
@@ -21,5 +22,31 @@ public class Bird extends Animal {
         System.out.println("Reproduction: " + this.reproduction);
         System.out.println("Outer Covering: " + this.outerCovering);
     }
+
+    public String getReproduction() {
+        return reproduction;
+    }
+
+    public void setReproduction(String reproduction) {
+        this.reproduction = reproduction;
+    }
+
+    public String getOuterCovering() {
+        return outerCovering;
+    }
+
+    public void setOuterCovering(String outerCovering) {
+        this.outerCovering = outerCovering;
+    }
+
+    public Insect getFavouriteInsect() {
+        return favouriteInsect;
+    }
+
+    public void setFavouriteInsect(Insect favouriteInsect) {
+        this.favouriteInsect = favouriteInsect;
+    }
+    
+    
     
 }
